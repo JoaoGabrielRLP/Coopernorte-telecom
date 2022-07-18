@@ -1,0 +1,102 @@
+/* Primeiro dropdown */
+.checkbtn{
+    font-size: 20px;
+    color: #aa62aa;
+    cursor: pointer;
+    display: inline-block;
+} 
+
+#check{
+    display:none;
+}
+
+
+.dropdown{
+    display: none;
+    transition: .7s;
+}
+
+#check:checked ~ .dropdown{
+    display: block;
+    position: relative;
+    width: inherit;
+    background-color: white;
+    text-align: justify;
+    padding-left: 3px;
+    padding-right:15px;
+}
+
+.checkbtn{
+    display: inline-block; 
+} 
+
+/* Segundo Dropdown */
+
+.checkbtn2{
+    font-size: 20px;
+    color: #aa62aa;
+    cursor: pointer;
+    display: inline-block;
+} 
+
+#check2{
+    display:none;
+}
+
+
+.dropdown2{
+    display: none;
+    transition: .7s;
+}
+
+#check2:checked ~ .dropdown2{
+    display: block;
+    position: relative;
+    width: inherit;
+    background-color: white;
+    text-align: justify;
+    padding-left: 3px;
+    padding-right:15px;
+}
+
+.checkbtn2{
+    display: inline-block;    
+} 
+
+/* Terceiro Dropdown */
+
+.checkbtn3{
+    font-size: 20px;
+    color: #aa62aa;
+    cursor: pointer;
+    display: inline-block;
+} 
+
+#check3{
+    display:none;
+}
+
+
+.dropdown3{
+    display: none;
+    transition: .7s;
+}
+
+#check3:checked ~ .dropdown3{
+    display: block;
+    position: relative;
+    width: inherit;
+    background-color: white;
+    text-align: justify;
+    padding-left: 3px;
+    padding-right:15px;
+}
+
+.checkbtn3{
+    display: inline-block;    
+} 
+
+.tamanhoImg{
+    max-width: 600px;
+    width:auto;
+}

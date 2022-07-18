@@ -1,0 +1,135 @@
+nav{
+    background-color: #f9f9f9;
+    padding: 1%;  
+    position: fixed;
+    width: 100%;
+    z-index: 99999;
+}
+
+.unordered-list{
+    float: right;
+    list-style: none;
+    margin-top: 18px;
+    margin-right: 35px;
+}
+
+.lista{
+    display: inline-block;
+    padding: 15px;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    margin-left: 15px;  
+}
+
+.lista:hover{
+    background-color: #d3da72;
+    display: inline-block;
+    padding: 15px;
+    text-align: center;
+    transition: 0.7s;
+    border-radius: 5px;
+}
+
+nav a{
+    text-decoration-style: none;
+    text-decoration: none;  
+    color: #aa62aa;
+}
+
+nav button{
+    font-family: 'Roboto Slab', serif;  
+    color: #aa62aa;
+    border: none;
+    background-color: inherit;
+    font-size: inherit;
+}
+
+.drop-content{
+    display: none;
+    position: absolute;
+    width: 138px;
+    box-shadow: 0px 8px 16px 0px #23232399;
+    z-index: 1;
+    background-color: #f9f9f9;
+    padding: 1%;
+    border-radius: 10px;
+}
+
+.drop-content a{
+    display: block;
+    float: left;
+    padding: 6px 10px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.drop-content a:hover{
+    color: #f9f9f9;
+}
+
+.dropdown:hover .drop-content{
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 10000;
+    margin-top: 15px;
+}
+
+ .checkbtn{
+    font-size: 30px;
+    color: #aa62aa;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+} 
+
+#check{
+    display: none;
+}
+
+img{
+    width: 200px;
+}
+
+/* Tamanhos de telas */
+
+@media screen and (max-width: 922px){  
+     .checkbtn{
+        display: inline-block;
+        margin-top: 2px;
+    } 
+
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background:#bdc551;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }   
+
+    nav ul .lista{
+        display: block;
+    }
+
+    nav ul .lista a{
+        font-size: 20px;
+    }
+
+    .drop-content{
+        position: relative;
+        width: 150px;
+    }
+
+    .drop-button{
+        font-size: 20px;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+}
